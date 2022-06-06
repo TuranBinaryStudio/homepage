@@ -4,11 +4,216 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Résumé</title>
-
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./images/icons/web-link.ico" />
+    <script
+      src="https://kit.fontawesome.com/26cf1c4094.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <div class="site-holder">
+      <div class="open-animation">
+        <!-- <div class="animation-bar"></div>
+            <div class="animation-bar"></div>
+            <div class="animation-bar"></div> -->
+      </div>
+      <header class="header-section">
+        <div class="header-menus">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/khidilov" target="_blank"
+            ><i style="padding: 1rem 1.05rem" class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://twitter.com/TuranKhidilov" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </header>
+      <div id="home" class="main-section">
+        <div class="introduction">
+          <p class="about-me">Aspiring developer</p>
+          <h1 id="main-info"></h1>
+        </div>
+        <div class="main-photo">
+          <img src="./images/main/Main photo.png" alt="" />
+        </div>
+      </div>
+      <div id="projects" class="secondary-holder">
+        <div class="secondary-content first">
+          <div class="text-in-secondary">
+            <p class="content-explanation">FRONTEND PROJECTS</p>
+            <h2>Here're my Projects, Enjoy!</h2>
+          </div>
+          <div class="slideshow-container">
+            <a
+              href="https://turankh.github.io/Chinici/"
+              target="_blank"
+              class="mySlides fade"
+            >
+              <div class="numbertext">1 / 4</div>
+              <img
+                src="./images/main/Chinici - Browser.png"
+                style="width: 100%"
+              />
+            </a>
+            <a
+              href="https://turankh.github.io/CoolSneak/"
+              target="_blank"
+              class="mySlides fade"
+            >
+              <div class="numbertext">2 / 4</div>
+              <img src="./images/main/CoolSneak.png" style="width: 100%" />
+            </a>
+            <a href="#" target="_blank" class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="./images/main/worldnet.png" style="width: 100%" />
+            </a>
+            <a href="#" target="_blank" class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="./images/main/playtekkers.png" style="width: 100%" />
+            </a>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="cv" class="secondary-holder">
+        <div class="secondary-content">
+          <div class="text-in-secondary">
+            <p class="content-explanation">Curriculum Vitae</p>
+            <h2>Go ahead, and take a look at my CV</h2>
+          </div>
+          <a
+            class="download-link"
+            href="./Documents/Turan Khidilov (C).pdf"
+            download
+          >
+            <div class="button-text">Download</div>
+            <div class="download-icon">↓</div>
+          </a>
+          <div class="cv-content">
+            <p class="skills-text">
+              Currently, I am doing my Bachelor's in Computer Scinece, meanwhile
+              taking awesome projects.
+            </p>
+            <p class="skills-text">
+              <span class="skill-header">Languages:</span> Russian -
+              <span class="language-status">Native</span> | Azerbaijani -
+              <span class="language-status">Native</span> | English -
+              <span class="language-status">Fluent</span> | Turkish - Advanced |
+              French - <span class="language-status">Beginner</span>
+            </p>
+            <p class="skills-text">
+              <span class="skill-header">Soft Skills:</span> Creativity, Problem
+              Solving, Communication
+            </p>
+            <p class="skills-text">
+              <span class="skill-header">Technical Skills:</span> HTML, CSS,
+              JavaScript, Sass, Angular, Photoshop, Figma, GitHub, MySql
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="padding-bottom: 20rem" id="contact" class="secondary-holder">
+        <div style="height: 40rem" class="secondary-content contact-me">
+          <div class="text-in-secondary">
+            <p class="content-explanation">Contact Me</p>
+            <h2>Have a question?</h2>
+          </div>
+          <div class="contact-content">
+            <div class="contact-social">
+              <ul class="social-media-list">
+                <li class="github-holder">
+                  <a
+                    href="https://github.com/TuranKh"
+                    target="_blank"
+                    class="contact-icon"
+                  >
+                    <i class="fa fa-github github" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="whatsapp-holder">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=994556279955"
+                    target="_blank"
+                    class="contact-icon"
+                  >
+                    <i class="fab fa-whatsapp whatsapp" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="instagram-holder">
+                  <a
+                    href="https://www.instagram.com/khidilov/"
+                    target="_blank"
+                    class="contact-icon"
+                  >
+                    <i class="fab fa-instagram instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="gmail-holder">
+                  <a
+                    href="mailto:turan.khidilov@gmail.com"
+                    subject="subject text"
+                    target="_blank"
+                    class="contact-icon"
+                  >
+                    <i class="fas fa-envelope-open-text gmail"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-social">
+              <ul class="social-media-list">
+                <li class="linkedin-holder">
+                  <a
+                    href="https://linkedin.com/in/khidilov"
+                    target="_blank"
+                    class="contact-icon"
+                  >
+                    <i class="fab fa-linkedin-in linkedin"></i
+                  ></a>
+                </li>
+                <li class="telegram-holder">
+                  <a
+                    href="https://t.me/JeoneJs"
+                    target="_blank"
+                    class="contact-icon"
+                  >
+                    <i class="fab fa-telegram-plane telegram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p class="footer-text">
+          Thanks for visiting<br />I would be very delighted to hear your
+          experience!
+        </p>
+      </footer>
+    </div>
+    
+    </div>
+    <script src="./animations.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

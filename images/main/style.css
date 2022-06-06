@@ -1,0 +1,1363 @@
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+@font-face {
+  font-family: "American Captain";
+  src: url("./Fonts/AmericanCaptain/American\ Captain.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./Fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./Fonts/Montserrat/Montse.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./Fonts/Montserrat/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./Fonts/Montserrat/Montserrat-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+
+.header-holder {
+  background-color: #184146;
+}
+.header {
+  width: 112.8rem;
+  height: 6rem;
+  padding-top: 1.8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-options {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: white;
+  text-transform: uppercase;
+}
+.header-center {
+  display: flex;
+  justify-content: space-between;
+  width: 48.1rem;
+}
+.header-right {
+  display: flex;
+  width: 22.8rem;
+  justify-content: space-between;
+}
+.header-right-mobile {
+  display: none;
+}
+.header-left {
+  width: 7.2rem;
+  height: 2.618rem;
+}
+.header-left img {
+  width: 100%;
+  height: 100%;
+}
+.shopping-bag-holder {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.05);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopping-bag-holder img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.login-holder {
+  width: 14.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  border: 0.2rem solid white;
+  border-radius: 3rem;
+}
+.header-right p {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+.deserve-section-holder {
+  background-color: #184146;
+}
+.deserve-section-top {
+  position: relative;
+  padding-top: 14.691rem;
+  margin-left: calc(50% - 56.4rem);
+  margin-right: calc(50% - 66.9rem);
+}
+.deserve-left {
+  width: 86.6rem;
+}
+.deserve-left a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.deserve-left a img {
+  margin-left: 1.7rem;
+  width: 4.7rem;
+  height: 3rem;
+}
+.deserve-left h2 {
+  font-family: "American Captain";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25rem;
+  line-height: 25rem;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.deserve-left h3 {
+  font-family: "American Captain";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.4rem;
+  line-height: 14.4rem;
+  letter-spacing: 0.1em;
+  color: #ffd569;
+}
+.sneaker-holder {
+  position: absolute;
+  right: calc(50% - 54.5rem);
+  top: 1.7rem;
+  width: 68.1rem;
+  height: 70.4rem;
+}
+.sneaker-holder img {
+  width: 100%;
+  height: 100%;
+}
+.blur-sneaker {
+  position: absolute;
+  width: 9.6rem;
+  height: 9.6rem;
+  right: calc(50% - 8.5rem);
+  top: 34.7rem;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  border-radius: 4.8rem;
+  backdrop-filter: blur(25px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.rounded-text {
+  position: absolute;
+  right: calc(50% - 50.4rem);
+  top: 26rem;
+  width: 25.2rem;
+  height: 25.36rem;
+}
+.rounded-text img {
+  width: 100%;
+  height: 100%;
+}
+.rounded-blur {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  right: 0;
+  top: 13.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  border: 0.1rem solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  backdrop-filter: blur(25px);
+  border-radius: 12.2rem;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.yellow-stroke {
+  position: absolute;
+  top: 24.8rem;
+  width: 40.5rem;
+  height: 16.06rem;
+}
+.yellow-stroke img {
+  width: 100%;
+  height: 100%;
+}
+.blue-stroke {
+  position: absolute;
+  right: 0;
+  top: 69.4rem;
+  width: 40.5rem;
+  height: 16.06rem;
+}
+.blue-stroke img {
+  width: 100%;
+  height: 100%;
+}
+.see-all-shoes-mobile {
+  display: none;
+}
+.deserve-bottom {
+  width: 112.8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.see-all-shoes {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.deserve-bottom img {
+  margin-left: 2.5rem;
+  height: 2.4rem;
+}
+.deserve-bottom2 {
+  width: 112.8rem;
+  margin: 0 auto;
+}
+.deserve-bottom2 h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.2rem;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 0.2rem white;
+  padding-left: 28.8rem;
+}
+.sneakers-selection-holder {
+  height: 26.8rem;
+  background-color: #184146;
+}
+.sneakers-selection {
+  display: flex;
+  width: 136.8rem;
+  margin: 0 auto;
+  padding-top: 4.1rem;
+}
+.brand-info {
+  width: 40.8rem;
+  background-color: #f0f0f0;
+  height: 55.2rem;
+}
+.brand-info-content {
+  width: 16.8rem;
+  margin: 7.7rem auto 6.4rem;
+}
+.brand-info-content img:first-of-type {
+  margin-bottom: 2.961rem;
+  height: 2.8rem;
+  width: 7.2rem;
+}
+.brand-info-content img:nth-of-type(2) {
+  margin-bottom: 3.2rem;
+  width: 13.7rem;
+  height: 6.2rem;
+}
+.brand-info-content p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 170%;
+  color: #283664;
+}
+.brand-info-bottom {
+  display: flex;
+  width: 16.8rem;
+
+  margin: 7.7rem auto 6.4rem;
+}
+
+.arrow-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.2rem;
+  height: 7.2rem;
+  background: #ffffff;
+  border: 0.2rem solid rgba(40, 54, 100, 0.1);
+  box-sizing: border-box;
+  border-radius: 3.6rem;
+}
+.arrow-holder img {
+  width: 4.08rem;
+  height: 4.08rem;
+}
+.arrow-holder:first-of-type {
+  margin-right: 2.4rem;
+}
+.arrow-holder:first-of-type img {
+  transform: rotate(180deg);
+}
+.sneaker-pic {
+  width: 36rem;
+  background-color: #29646c;
+  height: 55.2rem;
+}
+.sneaker-pic-content {
+  height: 100%;
+  width: 20.075rem;
+  margin: 0 auto;
+}
+.heart-holder {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3.2rem 3.2rem 0 0;
+}
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  background: #ffffff;
+  border-radius: 3rem;
+}
+.heart:hover {
+  background-color: #f79489;
+}
+.heart img {
+  width: 1.7rem;
+  height: 1.4rem;
+}
+.sneaker-pic-main {
+  position: relative;
+  padding-top: 2.9rem;
+}
+
+.small-ball {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1.75rem;
+  background: radial-gradient(
+    71.47% 71.47% at 30.21% 28.53%,
+    #00e0ff 0%,
+    #111d42 100%
+  );
+}
+.big-ball-holder {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.big-ball {
+  width: 9.4rem;
+  height: 9.4rem;
+  border-radius: 4.7rem;
+  background: radial-gradient(
+    71.47% 71.47% at 30.21% 28.53%,
+    #00e0ff 0%,
+    #111d42 100%
+  );
+}
+.sneaker-holder2 {
+  width: 21.8rem;
+  height: 21.7rem;
+  position: absolute;
+  top: 7.6rem;
+  right: 3.4rem;
+}
+.sneaker-holder2 img {
+  width: 100%;
+  height: 100%;
+}
+.booking-part {
+  width: 60rem;
+  background-color: #f0f0f0;
+  height: 55.2rem;
+}
+.booking-part-content {
+  margin: 11.7rem 0 11.7rem 4.8rem;
+}
+.arrows-mobile {
+  display: none;
+}
+.booking-part-options {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 170%;
+  display: flex;
+  align-items: flex-end;
+  color: #29646c;
+  margin-bottom: 1.2rem;
+}
+.sizes-holder {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 33rem;
+}
+.sizes-holder div {
+  display: flex;
+}
+.size-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.4rem;
+  height: 6.6rem;
+  border-radius: 3.3rem;
+  border: 0.1rem solid #29646c;
+  margin-right: 1.4rem;
+}
+.size {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 170%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #29646c;
+}
+.size-holder:hover .size {
+  color: white;
+}
+.size-holder:hover {
+  background-color: #29646c;
+}
+.reviews-holder .booking-part-options {
+  margin-bottom: 1.8rem;
+}
+.reviews-holder {
+  margin: 2.9rem 0 4.898rem;
+}
+.stars {
+  display: flex;
+}
+.star {
+  filter: contrast(0.1);
+  margin-right: 2rem;
+}
+.colors-holder {
+  display: flex;
+  width: 20.4rem;
+  justify-content: space-between;
+}
+/* .colors {
+  width: 6rem;
+  height: 3.2rem;
+  background: rgba(41, 100, 108, 0.1);
+  border-radius: 3rem;
+  border: 0.2rem solid transparent;
+}
+.colors-content {
+  margin: 0 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.blue-circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #0051c9;
+  border-radius: 3rem;
+}
+.red-circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #e83405;
+  border-radius: 3rem;
+}
+.grey-circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #262e4d;
+  border-radius: 3rem;
+}
+.grey-circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #ffffff;
+  border-radius: 3rem;
+}
+.colors:hover {
+  border: 0.2rem solid #29646c;
+  background: white;
+} */
+.colors {
+  width: 5.2rem;
+  z-index: 10;
+  display: flex;
+}
+.colors input[type="radio"] {
+  display: none;
+}
+.colors label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.circles-holder {
+  display: flex;
+  width: 4.4rem;
+  justify-content: space-between;
+  margin: 0 8px;
+}
+.colors label::before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 3.2rem;
+  background-color: rgba(41, 100, 108, 0.1);
+  border-radius: 30px;
+}
+.colors label:not(:first-of-type) {
+  margin-left: 3.3rem;
+}
+.colors input[type="radio"]:checked + label:before {
+  border: 2px solid #29646c;
+  box-sizing: border-box;
+  background: rgba(240, 240, 240, 0.1);
+}
+.circle-color {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+}
+
+.colors .explore-holder {
+  margin-top: 39.4rem;
+}
+.explore-section {
+  width: 136.8rem;
+  margin: 39.7rem auto 0;
+}
+.explore-header {
+  height: 18.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.8rem 0 12rem;
+  background: #103459;
+}
+.explore-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.explore-header h5 {
+  color: rgba(0, 0, 0, 0);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 150%;
+  -webkit-text-stroke: 0.2rem white;
+}
+.arrows-holder {
+  display: flex;
+}
+.arrow-mobile {
+  display: none;
+}
+.sneakers-holder {
+  width: 136.8rem;
+  margin: 2.4rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-holder {
+  width: 67.2rem;
+  height: 54.3rem;
+  margin-bottom: 2.3rem;
+  position: relative;
+}
+.product-mobile {
+  display: none;
+}
+.blur-mobile {
+  display: none;
+  position: absolute;
+  top: 22.7rem;
+}
+.nike-on {
+  position: absolute;
+  top: 4.091rem;
+  left: 4.8rem;
+  display: none;
+}
+.shop-now {
+  position: absolute;
+  height: 6rem;
+  background: #ffffff;
+  border-radius: 3rem;
+  top: 2.7rem;
+  right: 3.6rem;
+  display: none;
+}
+.sneaker-description-mobile {
+  display: none;
+}
+.product-holder:hover .shop-now,
+.product-holder:hover .nike-on {
+  display: block;
+}
+.shop-now p {
+  margin: 2.2rem 4.1rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #262e4d;
+}
+.product {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2.3rem;
+}
+
+.product:hover {
+  filter: brightness(0.9);
+  transition: 0.5s;
+}
+.deals-holder {
+  height: 67rem;
+}
+.deals-content {
+  height: 100%;
+  width: 136.8rem;
+  margin: 0 auto;
+  display: flex;
+}
+.deals-left {
+  width: 88.8rem;
+  height: 100%;
+  background-color: #184146;
+}
+.deals-left-content {
+  position: relative;
+  margin-left: 11.6rem;
+}
+.deals-bottom {
+  height: 9.5rem;
+  width: 67.2rem;
+  background-color: white;
+  margin-top: 10.8rem;
+  display: flex;
+}
+.your-email {
+  width: 41.3rem;
+  height: 100%;
+  margin-left: 3.2rem;
+  box-sizing: border-box;
+}
+.your-email input {
+  width: 41.3rem;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0px;
+  font-size: 3rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #184146;
+  opacity: 0.5;
+}
+input:focus {
+  outline: none;
+}
+.deals-bottom-right {
+  display: flex;
+  align-items: center;
+}
+.deals-bottom-right-holder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.deals-bottom-right p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #184146;
+  opacity: 0.5;
+}
+.subscribe-arrow {
+  height: 2.4rem;
+  margin-left: 3.3rem;
+  display: flex;
+  align-items: center;
+}
+.subscribe-arrow img {
+  width: 4.8rem;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  transform: rotate(180deg);
+}
+
+.sneaker-in-deals {
+  position: absolute;
+  right: 2rem;
+  top: 3.4rem;
+  width: 56rem;
+  height: 44.8rem;
+}
+.sneaker-in-deals img {
+  width: 100%;
+  height: 100%;
+}
+.circle-small-deals {
+  position: absolute;
+  right: 0;
+  top: 18.3rem;
+}
+
+.deals-right div {
+  height: calc(100% / 2);
+}
+.deals-right p {
+  font-family: "American Captain";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding: 6.4rem 0 0.8rem 6.4rem;
+}
+.deals-left-main p:first-of-type {
+  font-family: "American Captain";
+  font-weight: 400;
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  color: white;
+}
+.deals-left-main p:nth-of-type(2) {
+  font-family: "American Captain";
+  font-weight: 400;
+  font-size: 14.4rem;
+  line-height: 14.4rem;
+  margin-bottom: 0.8rem;
+  color: #ffb443;
+}
+.deals-left-main p:last-of-type {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 170%;
+  color: #ffffff;
+  width: 19.2rem;
+}
+.seasons {
+  position: relative;
+}
+.seasons-content img:first-of-type {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.seasons-holder {
+  margin: 3rem 0 3.2rem;
+  width: 16rem;
+  height: 6rem;
+  border: 0.2rem solid #ffffff;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+}
+.seasons-holder:hover {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: white;
+}
+
+.seasons-holder:hover .seasons-content {
+  color: #262e4d;
+}
+.seasons-holder:hover > * .arrow-on-hover {
+  display: block;
+  margin-left: -0.9rem;
+}
+
+.arrow-on-hover {
+  display: none;
+}
+.seasons-content {
+  margin-left: 4.1rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.seasons-content img:first-of-type {
+  margin-left: 2.1rem;
+  width: 1.2rem;
+  height: 0.6rem;
+}
+.seasons-content img {
+  width: 1.2rem;
+  height: 0.6rem;
+}
+.seasons-hover {
+  left: 0;
+  display: none;
+  position: absolute;
+  top: 4.44rem;
+  flex-direction: column;
+  width: 16.4rem;
+  height: 18rem;
+  background-color: white;
+  background: #ffffff;
+  box-shadow: 0px 25px 50px rgba(38, 46, 77, 0.1);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.seasons-hover a {
+  width: 16.4rem;
+  height: 6rem;
+  color: #262e4d;
+  border-radius: 3rem;
+  display: flex;
+  margin-left: 4.1rem;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+.seasons-holder:hover .seasons-hover {
+  display: flex;
+}
+.fall-holder {
+  background: #00e0ff;
+  width: 48rem;
+}
+.winter-holder {
+  background-color: #ffb443;
+  width: 48rem;
+}
+.deals-right img {
+  padding-left: 6.4rem;
+  width: 41.6rem;
+  height: 19.2rem;
+  object-fit: cover;
+}
+.footer-holder {
+  margin-top: 2.4rem;
+  width: 100%;
+  background: #103459;
+  height: 44.8rem;
+}
+.footer-content {
+  padding-top: 12.8rem;
+  width: 111.3rem;
+  margin: 0 auto;
+  display: flex;
+}
+.footer-center {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-center a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+}
+.footer-center li {
+  margin-bottom: 1.2rem;
+}
+.footer-center ul {
+  padding: 0;
+}
+.footer-center ul:not(:first-of-type) li {
+  color: rgba(255, 255, 255, 0.5);
+}
+.nike-logo {
+  margin-top: 1.7rem;
+  margin-right: 12rem;
+}
+
+@media only screen and (max-width: 1375px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 1261px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 1132px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: 986px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .header {
+    width: 100%;
+  }
+  .header-center {
+    display: none;
+  }
+  .header-right a:not(.header-right-mobile) {
+    display: none;
+  }
+  .header {
+    width: calc(100% - 3.6rem);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .header-right {
+    width: auto;
+  }
+  .header-right-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(94.67deg, #576799 0%, #6c7cb3 100%);
+    opacity: 0.25;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    border-radius: 3rem;
+  }
+  .deserve-section-top {
+    margin: 0;
+    padding: 0;
+  }
+  .deserve-left {
+    width: calc(100% - 3.6rem);
+    padding-top: 6.536rem;
+    margin: 0 auto;
+  }
+  .deserve-left a {
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+  }
+  .deserve-left h2 {
+    font-family: "American Captain";
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+  }
+  .deserve-left h3 {
+    font-size: 4.7rem;
+    line-height: 4.7rem;
+  }
+  .yellow-stroke {
+    width: 28.571rem;
+    height: 6.905rem;
+    left: -7rem;
+    top: 19.4rem;
+  }
+  .blue-stroke {
+    width: 164.29px;
+    height: 42.86px;
+    top: 42rem;
+  }
+  .sneaker-holder {
+    width: 29.681rem;
+    height: 30.613rem;
+    left: calc(100% - 29.681rem);
+    top: 23.4rem;
+  }
+  .rounded-blur {
+    width: 6.5rem;
+    height: 6.5rem;
+    right: 1.9rem;
+    top: 25.5rem;
+  }
+  .blur-sneaker {
+    width: 4.9rem;
+    height: 4.9rem;
+    left: calc(100% - 23.8rem);
+    bottom: -70px;
+  }
+  .rounded-text {
+    right: 1.8rem;
+    top: 41rem;
+    width: 10.798rem;
+    height: 10.8rem;
+  }
+  .deserve-bottom,
+  .deserve-bottom2 {
+    width: calc(100% - 3.6rem);
+    margin: 0 auto;
+  }
+  .deserve-bottom {
+    width: calc(100% - 3.6rem);
+    margin: 24rem auto 0;
+    justify-content: unset;
+  }
+  .deserve-bottom-mobile {
+  }
+  .see-all-shoes-mobile {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #ffffff;
+    display: flex;
+    width: calc(100% - 3.6rem);
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+  }
+  .deserve-bottom2 h4 {
+    padding-left: 0;
+    font-size: 4.8rem;
+  }
+  .sneakers-selection {
+    display: block;
+    width: 100%;
+  }
+  .brand-info {
+    margin-left: 1.8rem;
+    width: calc(100% - 1.8rem);
+    height: 34.5rem;
+  }
+  .brand-info-content {
+    margin: 0;
+    margin-left: 5.4rem;
+  }
+  .brand-info-content img:first-of-type {
+    margin-top: 3.2rem;
+  }
+  .brand-info-content img:last-of-type {
+    width: 16.8rem;
+    height: 9.3rem;
+  }
+  .brand-info-bottom {
+    display: none;
+  }
+  .sneakers-selection-holder {
+    height: 121rem;
+    /*27rem */
+  }
+  .sneaker-pic {
+    width: calc(100% - 1.8rem);
+    height: 44.2rem;
+  }
+  .sneaker-pic-holder {
+    background-color: #f0f0f0;
+    width: calc(100% - 1.8rem);
+    margin-left: 1.8rem;
+  }
+  .booking-part {
+    margin-left: 1.8rem;
+    width: calc(100% - 1.8rem);
+    height: 50.3rem;
+  }
+  .booking-part-content {
+    margin: 0;
+    margin-left: 3.2rem;
+  }
+  .size-holder {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3.3rem;
+  }
+  .arrows-mobile {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.2rem;
+  }
+  .arrows-mobile .arrows-holder:first-of-type {
+    margin-right: 2.4rem;
+  }
+  .explore-section {
+    width: 100%;
+  }
+
+  .explore-header {
+    padding: 0;
+    display: block;
+    flex-wrap: wrap;
+    background-color: #29646c;
+  }
+  .explore-holder {
+    margin-top: 17.1rem;
+  }
+  .arrows-holder {
+    display: flex;
+  }
+  .explore-content h5 {
+    width: 100%;
+    font-size: 2.4rem;
+    -webkit-text-stroke: 0.1rem white;
+    text-align: center;
+  }
+  .explore-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sneakers-holder {
+    width: 100%;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .see-all-shoes {
+    display: none;
+  }
+  .product-holder {
+    width: 24rem;
+    height: auto;
+  }
+  .product-holder:first-of-type {
+    margin-left: 1.6rem;
+  }
+  .product-holder:not(:first-of-type) {
+    margin-left: 2.4rem;
+  }
+  .product {
+    display: none;
+  }
+  .product-mobile {
+    display: block;
+    position: relative;
+  }
+  .product-holder:hover .shop-now,
+  .product-holder:hover .nike-on {
+    display: none;
+  }
+  .blur-mobile {
+    position: absolute;
+    bottom: 11.7rem;
+    right: 8.2rem;
+    width: 4rem;
+    height: 4rem;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    backdrop-filter: blur(15px);
+    border-radius: 122px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .sneaker-description-mobile {
+    display: block;
+  }
+  .sneaker-description-mobile h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 150%;
+    color: #c65652;
+  }
+  .sneaker-description-mobile h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 150%;
+    color: #262e4d;
+  }
+  .product-mobile:hover + .blur-mobile {
+    display: block;
+  }
+  .sizes-holder {
+    width: calc(100% - 0.8rem);
+    height: 5.2rem;
+    position: relative;
+    overflow: scroll;
+  }
+  .sizes-holder div {
+    position: absolute;
+  }
+  .deals-content {
+    width: 100%;
+    display: block;
+  }
+  .deals-left {
+    width: 100%;
+  }
+  .deals-left-content {
+    margin-left: 4rem;
+  }
+  .seasons {
+    margin-right: 4rem;
+  }
+  .seasons-holder {
+    width: 100%;
+    margin-bottom: 7.2rem;
+  }
+  .seasons {
+    padding-top: 6.6rem;
+  }
+  .seasons-content {
+    margin-right: 2.6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .sneaker-in-deals {
+    width: 17.1rem;
+    height: 13.7rem;
+    top: 18.7rem;
+  }
+  .deals-left-main p:first-of-type {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+  .deals-left-main p:nth-of-type(2) {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+  }
+  .deals-left-main p:last-of-type {
+    font-size: 1.6rem;
+  }
+  .deals-bottom {
+    display: block;
+    width: auto;
+    margin-top: 5.5rem;
+  }
+  .your-email {
+    width: auto;
+  }
+  .your-email input {
+    width: auto;
+  }
+
+  .deals-bottom-right-holder {
+    background-color: white;
+  }
+  .deals-bottom-right p {
+    margin-left: 3.2rem;
+  }
+  .deals-right img {
+    width: calc(100% - 6.4rem);
+  }
+  .fall-holder,
+  .winter-holder {
+    width: 100%;
+    height: 33.4rem;
+  }
+  .show-more-mobile {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .header-right-mobile:hover .show-more-mobile {
+    display: block;
+  }
+  .deals-left-content {
+    height: 67rem;
+  }
+  .deals-holder {
+    height: unset;
+  }
+  .footer-content {
+    padding-top: 4.8rem;
+    display: block;
+    width: calc(100% - 17.1rem);
+    margin: 0 auto;
+  }
+  .footer-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-holder {
+    height: auto;
+    margin-top: 0;
+    padding-bottom: 13.7rem;
+  }
+  .nike-logo {
+    margin-bottom: 3.2rem;
+  }
+  .footer-center ul {
+    margin-bottom: 6.4rem;
+  }
+  .footer-center li {
+    margin-right: 3rem;
+  }
+  .sneakers-selection-holder {
+    background-color: #ffffff;
+  }
+  .sneakers-selection {
+    background-color: #184146;
+    height: 15.2rem;
+  }
+}

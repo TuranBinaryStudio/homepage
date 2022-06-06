@@ -1,0 +1,585 @@
+@font-face {
+  font-family: "Biotif";
+  src: url("./Fonts/Biotif-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Bogart";
+  src: url("./Fonts/Bogart-Medium-trial.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Bogart";
+  src: url("./Fonts/Bogart-Regular-trial.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Biotif";
+  src: url("./Fonts/Biotif-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Billion";
+  src: url("./Fonts/BillionDreams_PERSONAL.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Biotif";
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 10px;
+}
+body {
+  height: 100%;
+  background-color: #111111;
+}
+
+.open-animation {
+  background-color: #111111;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 15;
+  transition: 0.5s;
+}
+.animation-bar {
+  width: 0;
+  float: right;
+  height: calc(100% / 3);
+  background-color: #f24607;
+  transition: 0.5s;
+}
+.header-section {
+  position: fixed;
+  z-index: 11;
+  height: 7.35rem;
+  width: 85%;
+  margin: 0 7.5%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #111111;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.header-menus {
+  width: 40rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+}
+.header-menus a {
+  padding-bottom: 0.4rem;
+  border-bottom: 0.4rem solid rgba(12, 12, 12, 0);
+  transition: 200ms;
+  border-radius: 0.5rem;
+}
+.header-menus a:hover {
+  border-bottom: 0.4rem solid #ffc4ff;
+}
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  width: 10rem;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+.social-media a {
+  display: flex;
+  align-items: center;
+}
+.social-media i {
+  font-size: 1.95rem;
+  transition: 0.3s;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.social-media a:first-of-type i:hover {
+  background-color: #0a66c2;
+}
+.social-media a:last-of-type i:hover {
+  background-color: #1d9bf0;
+}
+.main-section {
+  transition: 1s;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  transform: scale(0.8);
+}
+#main-info {
+  margin-top: 3rem;
+  height: 21rem;
+}
+.introduction {
+  width: 50%;
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  line-height: 6rem;
+  color: #fff;
+  background: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5.5rem;
+  font-family: "Bogart";
+}
+.main-photo {
+  margin-top: 8rem;
+}
+.main-photo img {
+  width: 59.6rem;
+  height: 59.6rem;
+}
+
+.about-me {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 400;
+  font-family: "Biotif";
+}
+
+.secondary-holder {
+  padding-top: 10vh;
+}
+.secondary-content {
+  height: 60rem;
+  border-radius: 3rem;
+  width: 80%;
+  background-color: #191919;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+  margin: 7.5rem auto;
+}
+.first {
+  height: 85rem;
+}
+.contact-me {
+  width: 50%;
+}
+h2 {
+  font-family: "Bogart";
+  font-size: 4rem;
+  font-weight: 400;
+  color: #fac552;
+}
+.text-in-secondary {
+  padding: 4.5rem 5.2rem 2.1rem 10rem;
+  text-align: end;
+}
+.github-icon {
+  display: inline-block;
+  position: relative;
+  transition: 200ms;
+}
+
+.github-icon img {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 4rem;
+  top: 8rem;
+}
+.github-info {
+  position: absolute;
+  width: 16rem;
+  height: 12rem;
+  background: linear-gradient(180deg, #db85b4, #b097f2);
+  left: 9rem;
+  top: 8rem;
+  border-radius: 1rem;
+  display: none;
+}
+.github-icon img:hover + .github-info {
+  display: block;
+}
+.github-info p {
+  padding: 2rem;
+  font-family: "Bogart";
+  font-weight: 500;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.content-explanation {
+  padding: 0.5rem;
+  font-family: "Biotif";
+  font-size: 1.4rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: 700;
+}
+
+.download-link {
+  display: flex;
+  width: 21.1rem;
+  height: 6rem;
+  background-color: #275efe;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  margin: 3rem auto 0;
+}
+.button-text {
+  font-size: 2rem;
+  font-family: "Biotif";
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 6rem);
+  justify-content: center;
+}
+.download-icon {
+  height: 100%;
+  background-color: #184fee;
+  width: 6rem;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 100rem;
+  position: relative;
+  margin: auto;
+  height: 63rem;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1.6rem;
+  margin-top: -2.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  bottom: 0.8rem;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.2rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cv-content {
+  margin: 8rem 10rem 10rem;
+}
+.skills-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.skills-text:first-of-type {
+  padding-bottom: 2rem;
+}
+.skill-header {
+  color: #00c8e4;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
+.footer-text {
+  font-family: "Billion";
+  background: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 7.5rem;
+  text-align: center;
+}
+.language-status {
+  border-bottom: 1px solid #fa6a5d;
+}
+
+.contact-social {
+  display: flex;
+}
+.contact-social img {
+  width: 2rem;
+  height: 2rem;
+}
+.contact-social a {
+  display: block;
+}
+.contact-icon {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.social-media-list {
+  display: flex;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.social-media-list li a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icon i {
+  font-size: 2.2rem;
+}
+
+.social-media-list li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  margin: 1rem 1rem;
+  line-height: 6rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27, 27, 27);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-list .instagram-holder:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+.social-media-list .whatsapp-holder:hover {
+  background-color: rgb(37, 211, 102);
+}
+.social-media-list .gmail-holder:hover {
+  background-color: white;
+}
+.social-media-list .github-holder:hover {
+  background-color: white;
+}
+.social-media-list .telegram-holder:hover {
+  background-color: white;
+}
+.social-media-list .linkedin-holder:hover {
+  background-color: white;
+}
+
+.social-media-list li:hover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a .github {
+  color: black;
+}
+.social-media-list li:hover a .whatsapp {
+  color: white;
+}
+.social-media-list li:hover a .instagram {
+  color: white;
+}
+.social-media-list li:hover a .gmail {
+  color: #bb001b;
+}
+.social-media-list li:hover a .telegram {
+  color: rgb(42 171 238);
+}
+.social-media-list li:hover a .linkedin {
+  color: rgb(40 103 178);
+}
+@media only screen and (max-width: 1557px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 1375px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 1175px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-menus {
+    display: none;
+  }
+  .main-photo {
+    display: none;
+  }
+  .social-media {
+    width: 100%;
+  }
+  .introduction {
+    margin-top: 10rem;
+    width: 100%;
+  }
+  .secondary-content {
+    height: 85rem;
+  }
+  .first {
+    height: 60rem;
+  }
+  .cv-content {
+    margin: 4rem 4rem 0;
+  }
+  .numbertext {
+    top: -1rem;
+  }
+  .contact-me {
+    width: 80%;
+  }
+  .slideshow-container {
+    height: unset;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
